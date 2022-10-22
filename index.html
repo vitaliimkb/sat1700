@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AJAX</title>
+</head>
+
+<body>
+    <form id="form">
+        <h3>Sort</h3>
+        <input type="radio" name="sort" id="id" value="id" checked>Id <br>
+        <input type="radio" name="sort" id="name" value="name">Name <br>
+        <input type="radio" name="sort" id="hp" value="hp">HP <br>
+        <input type="radio" name="sort" id="attack" value="attack">Attack <br>
+        <input type="radio" name="sort" id="defense" value="defense">Defense <br>
+        <h3>Order by</h3>
+        From smallest to biggest
+        <input type="radio" name="order" id="asc" value="asc" checked> <br>
+        From biggest to smallest
+        <input type="radio" name="order" id="desc" value="desc"> <br>
+    </form>
+
+    <form id="filters">
+        <h3>Filter by</h3>
+        <input type="text" name="name-filter" id="name-filter" placeholder="Name"><br><br>
+        HP From
+        <span id="hp-from-text">10</span>
+        <input type="range" name="hp-filter-from" id="hp-filter-from" min="10" max="250" value="10">
+
+        HP To
+        <span id="hp-to-text">250</span>
+        <input type="range" name="hp-filter-to" id="hp-filter-to" min="10" max="250" value="250"><br><br>
+
+
+        Attack From
+        <span id="attack-from-text">5</span>
+        <input type="range" name="attack-filter-from" id="attack-filter-from" 
+        min="5" max="134" value="5">
+
+        Attack To
+        <span id="attack-to-text">134</span>
+        <input type="range" name="attack-filter-to" id="attack-filter-to" 
+        min="5" max="134" value="134"><br><br>
+
+
+
+        Defense From
+        <span id="defense-from-text">5</span>
+        <input type="range" name="defense-filter-from" id="defense-filter-from" 
+        min="5" max="180" value="5">
+
+        Defense To
+        <span id="defense-to-text">180</span>
+        <input type="range" name="defense-filter-to" id="defense-filter-to" 
+        min="5" max="180" value="180"><br><br>
+
+        <div id="types"></div>
+
+        <input type="button" value="Apply filters" id="btn">
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
