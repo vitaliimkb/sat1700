@@ -1,0 +1,57 @@
+body {
+    padding: 50px;
+    background: linear-gradient(to right, gold, orange);
+    font-family: cursive;
+}
+
+#task {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#btn {
+    display: block;
+    margin: 20px auto;
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#btn:hover { 
+    background: rgba(0, 0, 0, 0.2); 
+}
+
+#btn:disabled {
+    background: grey;
+    cursor: initial;
+}
+
+#filters {
+    text-align: center;
+    font-size: 25px;
+}
+
+input {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 25px;
+}
+
+#types {
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#activity {
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 30px;
+    border-radius: 20px;
+}
